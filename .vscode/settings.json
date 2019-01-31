@@ -1,6 +1,3 @@
 {
-    "python.linting.pylintEnabled": false,
-    "python.linting.enabled": false,
-    "python.linting.pep8Enabled": true,
-    "python.pythonPath": "/home/giovani/.local/share/virtualenvs/mybook/bin/python"
+    "python.linting.pylintEnabled": true
 }
