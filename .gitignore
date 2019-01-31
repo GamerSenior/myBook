@@ -1,2 +1,4 @@
 *.pyc
 instance/
+.vscode/
+__pycache__
