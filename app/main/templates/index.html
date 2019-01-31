@@ -3,33 +3,70 @@
     <head>
         <title>myBook - Troca de Livros</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('main.static', filename='css/bulma.css') }}" />
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
         <link rel="stylesheet" type="text/css" href="{{ url_for('main.static', filename='css/all.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ url_for('main.static', filename='css/style.css') }}" />
     </head>
     <body>
-        <div class="container">
+        <div class="container has-background-primary">
             <!-- NAVIGATOR -->
             <div class="block">
-                <nav class="nav">
-                    <div class="nav-left">
-                        <a href="" class="nav-item">
-                            <h1 class="title is-4">myBook</h1>
-                        </a>                    
+                <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a href="#" class="navbar-item is-4">
+                            <i class="fas fa-book"></i>
+                            myBook
+                        </a>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
                     </div>
 
-                    <div class="nav-right">
-                        <a href="" class="nav-item">Início</a>
-                        <a href="" class="nav-item">Cadastro</a>
-                        <a href="" class="nav-item">Sobre nós</a>
-                        <a href="" class="nav-item">Contato</a>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a href="" class="navbar-item">
+                                Home
+                            </a>
+
+                            <a href="" class="navbar-item">
+                                Sobre nós
+                            </a>
+
+                            <a href="" class="navbar-item">
+                                Contato
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">.
+                            <div class="buttons">
+                                <a href="#" class="button is-primary">
+                                    <strong>Login</strong>
+                                </a>
+                                <a href="" class="button is-light">
+                                    Cadastrar
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </nav>
+
             </div>
-            
-            <!--HERO-->
-            <div class="block">
-                <div class="hero is-secondary">
-                    <p>Testando 1... 2... 3...</p>
+
+            <!-- CONTENT -->
+            <div class="hero is-primary">
+                <div class="hero-body">
+                    <div class="columns">
+                        <div class="column is-half has-text-centered">
+                            <i class="fas fa-journal-whills" style="font-size: 10em"></i>
+                        </div>
+                        <div class="column">
+                                <p>myBook é uma plataform para amantes de livros que desejam analisar e trocar suas posses preferidas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

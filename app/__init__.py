@@ -2,9 +2,10 @@ from flask import Flask, url_for
 from .main.views import main
 import os
 
-app = Flask(__name__, instance_relative_config=True)
+# app = Flask(__name__, instance_relative_config=True)
+app = Flask(__name__)
 app.config.from_object('config')
-app.config.from_pyfile('config.py')
+#app.config.from_pyfile('config.py')
 
 app.register_blueprint(main)
 
